@@ -1,4 +1,4 @@
-# https://github.com/jmlewis/valett/blob/master/scrabble/sowpods.txt
+# The dictionary was downloaded from the link: https://github.com/jmlewis/valett/blob/master/scrabble/sowpods.txt
 # TABIND Scrabble 
 # The objective of this project is to develop a program that takes the letter combination “tabind” only once and creates an alphabetical list of all the words, from a Scrabble dictionary that can be found with those letters. 
 
@@ -24,3 +24,4 @@ print(f"Found {len(valid)} words with the letters '{letters}':\n")
 for w in valid:
 
     print(w)
+
