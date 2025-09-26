@@ -12,8 +12,8 @@ with open("dict.txt", "r", encoding="utf-8") as f:
     words = [w.strip().lower() for w in f if w.strip()]
 
 # Keep only words that:
-# (1) are at least 2 letters long
-# (2) can be formed with the available letters in bag
+# i) are at least 2 letters long
+# ii) can be formed with the available letters in bag
 valid = [w for w in words if len(w) >= 2 and not (Counter(w) - bag)]
 
 
@@ -22,4 +22,5 @@ valid.sort()
 
 print(f"Found {len(valid)} words with the letters '{letters}':\n")
 for w in valid:
+
     print(w)
